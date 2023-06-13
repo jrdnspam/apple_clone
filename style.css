@@ -1,0 +1,305 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_thin.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+  font-weight: 100;
+}
+
+/*            End of CSS Reset            */
+
+/*                 Setup                  */
+
+/*               Borderbox                */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* clearfix */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+
+/* ---------- NAV ----------- */
+
+nav {
+  background-color: rgb(61, 61, 61);
+  text-decoration: none;
+}
+nav > a:hover {
+  color: black;
+  opacity: .5%;
+}
+
+.nav-container {
+  margin: 0 auto;
+  max-width: 1024px;
+  text-align: center;
+  padding: 0 10px;  
+}
+.col-10 {
+display: inline-block;
+width: 10%;
+margin: 0;
+}
+/*----- HERO SECTION---------*/
+
+body {
+  font-family: "Myriad Set Pro";
+}
+.hero {
+  height: 500px;
+  margin-top: 40px;
+}
+#product-info {
+text-align: center;
+background-color: bisque;
+
+}
+#product-name {
+  font-weight: 500;
+  font-size: 60px;
+  
+}
+#product-text {
+  font-size: 39.5px;
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+#product-links {
+  text-align: center;
+  display: inline-block;
+  font-size: 1.2em;
+  color: black;
+  text-decoration: none;
+}
+#product-links > li {
+  display: inline-block;
+  font-size: 23.7px;
+  font-weight: 300;
+  line-height: 1.3375;
+  margin: 0 6px 12px;
+}
+#product-links > li > a {
+  color: #08c;
+  text-decoration: none;
+
+}
+#product-links > li > a:hover {
+  text-decoration: underline;
+  color: rgb(31, 183, 77);
+}
+#product-image {
+height: 600px;
+background-image: url('./images/hero_iphone_13pro_alternative.jpg');
+background-position: center;
+margin-top: -230px;
+
+}
+.col-4 {
+  height: 200px;
+  display: inline-block;
+  width: 25%;
+  margin-top: 80px;
+  border-right: 5px solid white;
+
+}
+#watch {
+  background-image: url(images/watch_large.jpg);
+  background-position: center;
+}
+#ipad {
+  background-image: url(images/ipad_pro_large.jpg);
+  background-position: center;
+}
+#accessories {
+  background-image: url(images/accessories_large.jpg);
+  background-position: center;
+}
+#macbook {
+  background-image: url(images/macbook_large.jpg);
+  background-position: center;
+}
+/*  -------   AC WALL PLUG TEXT    -------     */
+.wall-plug {
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+}
+.wall-plug > a {
+  text-decoration: none;
+  color: #08c;
+}
+.wall-plug > a:hover {
+  text-decoration: underline;
+  color: rgb(31, 183, 77);
+}
+/*  -------   FOOTER    -------     */
+
+footer {
+  background-color: #f6f0f0;
+}
+.footer-links {
+  width: 75%;
+  text-align: left;
+  margin: auto;
+  margin-top: 30px;
+  
+}
+.col-5 {
+  display: inline-block;
+  width: 20%;
+  font-weight: 300;
+  font-size: small;
+  line-height: 20px;
+  vertical-align: top;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+.col-5 > ul > li > a {
+  text-decoration: none;
+  color: rgb(107, 106, 106);
+}
+.col-5 > ul > li > a:hover {
+  text-decoration: underline;
+  color: black;
+}
+.bold {
+  font-weight: 500;
+}
+/*  -------   FOOTER HELP LINKS   -------     */
+
+.help-links {
+  line-height: 20px;
+  margin: 0 165px;
+  font-weight: 300;
+  font-size: 12px;
+  text-align: left;
+  color: rgb(107, 106, 106);
+  border-bottom: solid 1px rgb(199, 196, 196);
+  padding-bottom: 5px;
+}
+.help-links p > a {
+  color: #08c;
+}
+.footer-sub {
+  line-height: 20px;
+  margin: 0 165px;
+  font-weight: 300;
+  font-size: 12px;
+  text-align: left;
+  color: rgb(107, 106, 106);
+  padding: 5px 0;
+}
+.privacy {
+  padding-left: 30px;
+  text-decoration: none;
+  word-spacing: 2px;
+  font-weight: 400;
+}
+.privacy > a {
+  text-decoration: none;
+  color: gray;
+}
+.privacy > a:hover {
+  text-decoration: underline;
+  color: black;
+}
+.block {
+  display: inline-block;
+  height: 20px;
+}
+.usa {
+  background-image: url(images/usa.png) no-repeat;
+  background-position: center;
+  padding-left: 300px;
+  height: 20px;
+  display: inline-block;
+  
+}
