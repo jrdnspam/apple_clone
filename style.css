@@ -129,7 +129,6 @@ body {
   font-family: "Myriad Set Pro";
 }
 .hero {
-  height: 500px;
   margin-top: 40px;
 }
 #product-info {
@@ -183,7 +182,6 @@ margin-top: -230px;
   height: 200px;
   display: inline-block;
   width: 25%;
-  margin-top: 80px;
   border-right: 5px solid white;
 
 }
@@ -227,8 +225,7 @@ footer {
 .footer-links {
   width: 75%;
   text-align: left;
-  margin: auto;
-  margin-top: 30px;
+  margin: 30px auto;
   
 }
 .col-5 {
@@ -238,8 +235,7 @@ footer {
   font-size: small;
   line-height: 20px;
   vertical-align: top;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 30px 0;
 
 }
 .col-5 > ul > li > a {
@@ -257,10 +253,8 @@ footer {
 
 .help-links {
   line-height: 20px;
-  margin: 0 165px;
   font-weight: 300;
   font-size: 12px;
-  text-align: left;
   color: rgb(107, 106, 106);
   border-bottom: solid 1px rgb(199, 196, 196);
   padding-bottom: 5px;
@@ -270,7 +264,6 @@ footer {
 }
 .footer-sub {
   line-height: 20px;
-  margin: 0 165px;
   font-weight: 300;
   font-size: 12px;
   text-align: left;
@@ -298,8 +291,12 @@ footer {
 .usa {
   background-image: url(images/usa.png) no-repeat;
   background-position: center;
-  padding-left: 300px;
+  padding-left: 450px;
   height: 20px;
   display: inline-block;
   
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
 }
